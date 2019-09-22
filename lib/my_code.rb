@@ -15,9 +15,12 @@ def reduce(array, sv = nil)
   i = 0 
   if sv.is_a? Integer
     value = sv + value
+  else
+    value = array[0]
+    i = 1 
   end
   while i < array.length do
-    yield()
+    yield(value)
     value = value + array[i]
     i += 1 
   else
