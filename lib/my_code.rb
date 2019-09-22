@@ -17,7 +17,7 @@ def reduce(array, sv = nil)
     value = sv + value
   end
   while i < array.length do
-    if value.to_i
+    yield()
     value = value + array[i]
     i += 1 
   else
