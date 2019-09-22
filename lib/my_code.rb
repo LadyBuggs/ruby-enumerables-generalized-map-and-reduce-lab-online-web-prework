@@ -21,8 +21,7 @@ def reduce(array, sv = nil)
   end
   while i < array.length do
    value =  yield(value, array[i])
-   
-    i += 1 
+   i += 1 
   else
     i += 1 
   end 
