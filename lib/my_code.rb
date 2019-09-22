@@ -21,5 +21,5 @@ def reduce(array, sv = nil)
     i += 1 
   end 
   end
-  value
+  value + sv
 end 
