@@ -13,6 +13,9 @@ end
 def reduce(array, sv = nil)
   value = 0 
   i = 0 
+  if sv.is_a? Integer
+    value = sv + value
+  end
   while i < array.length do
     if value.to_i
     value = value + array[i]
